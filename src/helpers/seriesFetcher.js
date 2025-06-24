@@ -24,7 +24,7 @@ export default async function seriesFetcher(id) {
 
 export async function getSeason({ id, seasonId }) {
   const html = await apiRequestRawHtml(
-    `https://www.imdb.com/title/${id}/episodes?season=${seasonId}`
+    `https://www.imdb.com/es/title/${id}/episodes?season=${seasonId}`
   );
 
   let parser = new DomParser();
