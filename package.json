@@ -5,7 +5,7 @@
   "description": "Serverless IMDB API powered by Cloudflare Worker",
   "main": "src/index.js",
   "scripts": {
-    "dev": "wrangler dev src/index.js --port 3000",
+    "dev": "wrangler dev src/index.js --no-d1 --port 3000",
     "publish": "wrangler deploy src/index.js",
     "test": "jest",
     "start": "wrangler dev src/index.js --port 3000",
